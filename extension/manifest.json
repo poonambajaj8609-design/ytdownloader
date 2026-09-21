@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "YT-DLP Downloader",
+  "version": "1.0",
+  "description": "Sends YouTube URLs to local yt-dlp backend",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://localhost:5000/*",
+    "*://*.youtube.com/*",
+    "*://youtu.be/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
